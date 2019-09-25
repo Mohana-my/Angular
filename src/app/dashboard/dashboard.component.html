@@ -1,0 +1,9 @@
+<div class="form-group">
+<input type="text" placeholder="Search By Name" class="form-control" [(ngModel)]="search" style="width:300px;margin: 28px;">
+
+</div>
+
+<ul *ngFor="let employee of employees | filter :search" style="list-style: none">
+  <li>{{employee.name}}</li>
+
+</ul>
